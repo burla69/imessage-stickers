@@ -20,7 +20,7 @@ final class StickerCollectionView: UICollectionView {
         backgroundColor = .white
 
         // Register cell
-        register(StickerCell.self, forCellWithReuseIdentifier: StickerCell.reuseIdentifier)
+        register(StickerCell.self, forCellWithReuseIdentifier: StickerCell.ReuseIdentifier)
         register(StickerCollectionViewHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: StickerCollectionViewHeader.reuseIdentifier)
 
         // Set up flow layout
