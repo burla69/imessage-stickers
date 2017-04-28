@@ -29,7 +29,7 @@ final class StickerCollectionViewDataSource: NSObject, UICollectionViewDataSourc
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StickerCellReuseIdentifier, for: indexPath) as! StickerCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StickerCell.ReuseIdentifier, for: indexPath) as! StickerCell
         cell.configure(with: Stickers[indexPath.section].stickers[indexPath.row])
         return cell
     }
