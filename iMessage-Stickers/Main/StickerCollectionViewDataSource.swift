@@ -18,7 +18,7 @@ final class StickerCollectionViewDataSource: NSObject, UICollectionViewDataSourc
         guard kind == UICollectionElementKindSectionHeader else { return UICollectionReusableView() }
 
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader,
-                                                        withReuseIdentifier: StickerCollectionViewHeader.reuseIdentifier,
+                                                        withReuseIdentifier: StickerCollectionViewHeader.ReuseIdentifier,
                                                                         for: indexPath) as! StickerCollectionViewHeader
         header.configure(Stickers[indexPath.section])
         return header
