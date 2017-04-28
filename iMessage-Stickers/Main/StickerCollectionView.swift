@@ -21,6 +21,7 @@ final class StickerCollectionView: UICollectionView {
 
         // Register cell
         register(StickerCell.self, forCellWithReuseIdentifier: StickerCellReuseIdentifier)
+        register(StickerCollectionViewHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: StickerCollectionViewHeader.reuseIdentifier)
 
         // Set up flow layout
         self.stickerFlowLayout = stickerFlowLayout
