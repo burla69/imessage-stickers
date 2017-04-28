@@ -9,9 +9,9 @@
 import UIKit
 import SnapKit
 
-let StickerCellReuseIdentifier = "StickerCellReuseIdentifier"
-
 final class StickerCell: UICollectionViewCell {
+
+    static let ReuseIdentifier = String(describing: StickerCell.self)
 
     private let nameLabel: UILabel = {
         let label = UILabel()
