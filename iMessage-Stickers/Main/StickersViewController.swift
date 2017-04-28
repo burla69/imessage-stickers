@@ -10,8 +10,20 @@ import UIKit
 
 final class StickersViewController: UIViewController {
 
+    private var stickerCollectionView: StickerCollectionView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Set up view
+        automaticallyAdjustsScrollViewInsets = false
         view.backgroundColor = .white
+
+        // Set collection view
+        stickerCollectionView = StickerCollectionView(baseView: view)
+        view.addSubview(stickerCollectionView)
+        stickerCollectionView.snp.remakeConstraints { make in
+            make.top.equalTo(self.topLayoutGuide.snp.bottom)
+            make.left.bottom.right.equalToSuperview()
+        }
     }
 }
