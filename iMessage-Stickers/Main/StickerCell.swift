@@ -11,7 +11,7 @@ import SnapKit
 
 final class StickerCell: UICollectionViewCell {
 
-    static let reuseIdentifier = String(describing: StickerCell.self)
+    static let ReuseIdentifier = String(describing: StickerCell.self)
 
     private let nameLabel: UILabel = {
         let label = UILabel()
