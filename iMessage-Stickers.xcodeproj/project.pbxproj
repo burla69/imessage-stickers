@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		967A93561EB2FF51006A71DE /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967A93551EB2FF51006A71DE /* SnapKit.framework */; };
 		96AB23921EB2FBA5006DBB96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB23901EB2FBA5006DBB96 /* AppDelegate.swift */; };
 		96AB23931EB2FBA5006DBB96 /* StickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB23911EB2FBA5006DBB96 /* StickersViewController.swift */; };
 		96AB23961EB2FBAC006DBB96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96AB23941EB2FBAC006DBB96 /* LaunchScreen.storyboard */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		967A93551EB2FF51006A71DE /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		96AB237B1EB2FB14006DBB96 /* iMessage-Stickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iMessage-Stickers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AB23901EB2FBA5006DBB96 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Main/AppDelegate.swift; sourceTree = "<group>"; };
 		96AB23911EB2FBA5006DBB96 /* StickersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickersViewController.swift; path = Main/StickersViewController.swift; sourceTree = "<group>"; };
@@ -27,17 +29,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967A93561EB2FF51006A71DE /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		967A93541EB2FF51006A71DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				967A93551EB2FF51006A71DE /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		96AB23721EB2FB14006DBB96 = {
 			isa = PBXGroup;
 			children = (
 				96AB237D1EB2FB14006DBB96 /* iMessage-Stickers */,
 				96AB237C1EB2FB14006DBB96 /* Products */,
+				967A93541EB2FF51006A71DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +83,7 @@
 				96AB23771EB2FB14006DBB96 /* Sources */,
 				96AB23781EB2FB14006DBB96 /* Frameworks */,
 				96AB23791EB2FB14006DBB96 /* Resources */,
+				967A93571EB2FF62006A71DE /* Run Script (Carthage) */,
 			);
 			buildRules = (
 			);
@@ -128,6 +141,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		967A93571EB2FF62006A71DE /* Run Script (Carthage) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = "Run Script (Carthage)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96AB23771EB2FB14006DBB96 /* Sources */ = {
@@ -254,6 +285,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4TWS7E2EPE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/iMessage-Stickers/Main/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nimbl3.iMessage-Stickers";
@@ -269,6 +304,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4TWS7E2EPE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/iMessage-Stickers/Main/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nimbl3.iMessage-Stickers";
