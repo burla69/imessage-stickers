@@ -10,6 +10,10 @@
 		967A93561EB2FF51006A71DE /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967A93551EB2FF51006A71DE /* SnapKit.framework */; };
 		967A93591EB30172006A71DE /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A93581EB30172006A71DE /* Sticker.swift */; };
 		967A935D1EB30268006A71DE /* Stickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A935C1EB30268006A71DE /* Stickers.swift */; };
+		967A935F1EB30543006A71DE /* StickerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A935E1EB30543006A71DE /* StickerCollectionView.swift */; };
+		967A93611EB305FD006A71DE /* StickerCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A93601EB305FD006A71DE /* StickerCollectionViewDataSource.swift */; };
+		967A93631EB30894006A71DE /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A93621EB30894006A71DE /* StickerCell.swift */; };
+		967A93651EB30C49006A71DE /* StickerCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A93641EB30C49006A71DE /* StickerCollectionViewFlowLayout.swift */; };
 		96AB23921EB2FBA5006DBB96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB23901EB2FBA5006DBB96 /* AppDelegate.swift */; };
 		96AB23931EB2FBA5006DBB96 /* StickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB23911EB2FBA5006DBB96 /* StickersViewController.swift */; };
 		96AB23961EB2FBAC006DBB96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96AB23941EB2FBAC006DBB96 /* LaunchScreen.storyboard */; };
@@ -20,6 +24,10 @@
 		967A93551EB2FF51006A71DE /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		967A93581EB30172006A71DE /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sticker.swift; path = Main/Sticker.swift; sourceTree = "<group>"; };
 		967A935C1EB30268006A71DE /* Stickers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stickers.swift; path = Main/Stickers.swift; sourceTree = "<group>"; };
+		967A935E1EB30543006A71DE /* StickerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickerCollectionView.swift; path = Main/StickerCollectionView.swift; sourceTree = "<group>"; };
+		967A93601EB305FD006A71DE /* StickerCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickerCollectionViewDataSource.swift; path = Main/StickerCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		967A93621EB30894006A71DE /* StickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickerCell.swift; path = Main/StickerCell.swift; sourceTree = "<group>"; };
+		967A93641EB30C49006A71DE /* StickerCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickerCollectionViewFlowLayout.swift; path = Main/StickerCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		96AB237B1EB2FB14006DBB96 /* iMessage-Stickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iMessage-Stickers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AB23901EB2FBA5006DBB96 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Main/AppDelegate.swift; sourceTree = "<group>"; };
 		96AB23911EB2FBA5006DBB96 /* StickersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickersViewController.swift; path = Main/StickersViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +56,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		967A93661EB30EA1006A71DE /* StickerCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				967A935E1EB30543006A71DE /* StickerCollectionView.swift */,
+				967A93641EB30C49006A71DE /* StickerCollectionViewFlowLayout.swift */,
+				967A93601EB305FD006A71DE /* StickerCollectionViewDataSource.swift */,
+				967A93621EB30894006A71DE /* StickerCell.swift */,
+			);
+			name = StickerCollectionView;
+			sourceTree = "<group>";
+		};
 		96AB23721EB2FB14006DBB96 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +91,7 @@
 				967A93581EB30172006A71DE /* Sticker.swift */,
 				967A935C1EB30268006A71DE /* Stickers.swift */,
 				96AB23911EB2FBA5006DBB96 /* StickersViewController.swift */,
+				967A93661EB30EA1006A71DE /* StickerCollectionView */,
 				96AB23941EB2FBAC006DBB96 /* LaunchScreen.storyboard */,
 				96AB239A1EB2FC02006DBB96 /* Assets.xcassets */,
 				96AB23991EB2FBBC006DBB96 /* Info.plist */,
@@ -171,10 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967A935F1EB30543006A71DE /* StickerCollectionView.swift in Sources */,
 				967A935D1EB30268006A71DE /* Stickers.swift in Sources */,
 				96AB23931EB2FBA5006DBB96 /* StickersViewController.swift in Sources */,
 				967A93591EB30172006A71DE /* Sticker.swift in Sources */,
 				96AB23921EB2FBA5006DBB96 /* AppDelegate.swift in Sources */,
+				967A93631EB30894006A71DE /* StickerCell.swift in Sources */,
+				967A93651EB30C49006A71DE /* StickerCollectionViewFlowLayout.swift in Sources */,
+				967A93611EB305FD006A71DE /* StickerCollectionViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
