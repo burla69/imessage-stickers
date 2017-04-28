@@ -8,6 +8,7 @@
 
 import UIKit
 
+private let HeaderHeight: CGFloat = 50
 private let StickerHeight: CGFloat = 250
 
 private struct NumberOfItemsPerRow {
@@ -53,6 +54,7 @@ final class StickerCollectionViewFlowLayout: UICollectionViewFlowLayout {
     }
 
     private func setItemSize(for numberOfItemsPerRow: CGFloat) {
+        headerReferenceSize = CGSize(width: baseWidth, height: HeaderHeight)
         itemSize = CGSize(width: baseWidth / numberOfItemsPerRow, height: StickerHeight)
     }
 }
