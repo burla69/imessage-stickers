@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		965978761EB34AE9001D7290 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965978751EB34AE9001D7290 /* Section.swift */; };
+		965978781EB34C55001D7290 /* StickerCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965978771EB34C55001D7290 /* StickerCollectionViewHeader.swift */; };
 		967A93561EB2FF51006A71DE /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967A93551EB2FF51006A71DE /* SnapKit.framework */; };
 		967A93591EB30172006A71DE /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A93581EB30172006A71DE /* Sticker.swift */; };
 		967A935D1EB30268006A71DE /* Stickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A935C1EB30268006A71DE /* Stickers.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		965978751EB34AE9001D7290 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Main/Section.swift; sourceTree = "<group>"; };
+		965978771EB34C55001D7290 /* StickerCollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickerCollectionViewHeader.swift; path = Main/StickerCollectionViewHeader.swift; sourceTree = "<group>"; };
 		967A93551EB2FF51006A71DE /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		967A93581EB30172006A71DE /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sticker.swift; path = Main/Sticker.swift; sourceTree = "<group>"; };
 		967A935C1EB30268006A71DE /* Stickers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stickers.swift; path = Main/Stickers.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 				967A935E1EB30543006A71DE /* StickerCollectionView.swift */,
 				967A93641EB30C49006A71DE /* StickerCollectionViewFlowLayout.swift */,
 				967A93601EB305FD006A71DE /* StickerCollectionViewDataSource.swift */,
+				965978771EB34C55001D7290 /* StickerCollectionViewHeader.swift */,
 				967A93621EB30894006A71DE /* StickerCell.swift */,
 			);
 			name = StickerCollectionView;
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				96AB23901EB2FBA5006DBB96 /* AppDelegate.swift */,
+				965978751EB34AE9001D7290 /* Section.swift */,
 				967A93581EB30172006A71DE /* Sticker.swift */,
 				967A935C1EB30268006A71DE /* Stickers.swift */,
 				96AB23911EB2FBA5006DBB96 /* StickersViewController.swift */,
@@ -191,12 +197,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965978761EB34AE9001D7290 /* Section.swift in Sources */,
 				967A935F1EB30543006A71DE /* StickerCollectionView.swift in Sources */,
 				967A935D1EB30268006A71DE /* Stickers.swift in Sources */,
 				96AB23931EB2FBA5006DBB96 /* StickersViewController.swift in Sources */,
 				967A93591EB30172006A71DE /* Sticker.swift in Sources */,
 				96AB23921EB2FBA5006DBB96 /* AppDelegate.swift in Sources */,
 				967A93631EB30894006A71DE /* StickerCell.swift in Sources */,
+				965978781EB34C55001D7290 /* StickerCollectionViewHeader.swift in Sources */,
 				967A93651EB30C49006A71DE /* StickerCollectionViewFlowLayout.swift in Sources */,
 				967A93611EB305FD006A71DE /* StickerCollectionViewDataSource.swift in Sources */,
 			);
