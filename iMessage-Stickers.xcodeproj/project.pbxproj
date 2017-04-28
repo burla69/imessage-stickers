@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		967A93561EB2FF51006A71DE /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967A93551EB2FF51006A71DE /* SnapKit.framework */; };
+		967A93591EB30172006A71DE /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A93581EB30172006A71DE /* Sticker.swift */; };
+		967A935D1EB30268006A71DE /* Stickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A935C1EB30268006A71DE /* Stickers.swift */; };
 		96AB23921EB2FBA5006DBB96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB23901EB2FBA5006DBB96 /* AppDelegate.swift */; };
 		96AB23931EB2FBA5006DBB96 /* StickersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB23911EB2FBA5006DBB96 /* StickersViewController.swift */; };
 		96AB23961EB2FBAC006DBB96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96AB23941EB2FBAC006DBB96 /* LaunchScreen.storyboard */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		967A93551EB2FF51006A71DE /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		967A93581EB30172006A71DE /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sticker.swift; path = Main/Sticker.swift; sourceTree = "<group>"; };
+		967A935C1EB30268006A71DE /* Stickers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stickers.swift; path = Main/Stickers.swift; sourceTree = "<group>"; };
 		96AB237B1EB2FB14006DBB96 /* iMessage-Stickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iMessage-Stickers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AB23901EB2FBA5006DBB96 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Main/AppDelegate.swift; sourceTree = "<group>"; };
 		96AB23911EB2FBA5006DBB96 /* StickersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickersViewController.swift; path = Main/StickersViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				96AB23901EB2FBA5006DBB96 /* AppDelegate.swift */,
+				967A93581EB30172006A71DE /* Sticker.swift */,
+				967A935C1EB30268006A71DE /* Stickers.swift */,
 				96AB23911EB2FBA5006DBB96 /* StickersViewController.swift */,
 				96AB23941EB2FBAC006DBB96 /* LaunchScreen.storyboard */,
 				96AB239A1EB2FC02006DBB96 /* Assets.xcassets */,
@@ -165,7 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967A935D1EB30268006A71DE /* Stickers.swift in Sources */,
 				96AB23931EB2FBA5006DBB96 /* StickersViewController.swift in Sources */,
+				967A93591EB30172006A71DE /* Sticker.swift in Sources */,
 				96AB23921EB2FBA5006DBB96 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
