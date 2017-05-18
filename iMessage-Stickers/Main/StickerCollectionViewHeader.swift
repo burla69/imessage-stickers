@@ -16,7 +16,6 @@ final class StickerCollectionViewHeader: UICollectionReusableView {
     private var nameLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.backgroundColor = .red
         return label
     }()
 
