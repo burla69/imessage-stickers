@@ -17,10 +17,13 @@ final class StickersViewController: UIViewController {
         // Set up view
         automaticallyAdjustsScrollViewInsets = false
         view.backgroundColor = .white
+        
+        title = "iMessage Stickers"
 
         // Set collection view
         stickerCollectionView = StickerCollectionView(baseView: view)
         stickerCollectionView.delegate = self
+        stickerCollectionView.alwaysBounceVertical = true
         view.addSubview(stickerCollectionView)
         stickerCollectionView.snp.remakeConstraints { make in
             make.top.equalTo(self.topLayoutGuide.snp.bottom)
@@ -31,7 +34,7 @@ final class StickersViewController: UIViewController {
 
 extension StickersViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let content = Stickers[indexPath.section].stickers[indexPath.row].name
+        let content = Stickers[indexPath.section].stickers[indexPath.row].image
         let activityViewController = UIActivityViewController(activityItems: [content], applicationActivities: nil)
         if UI_USER_INTERFACE_IDIOM() == .pad {
             guard let sourceView = collectionView.cellForItem(at: indexPath) else { return }

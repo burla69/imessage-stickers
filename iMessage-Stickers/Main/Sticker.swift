@@ -6,12 +6,8 @@
 //  Copyright © 2017 Nimbl3. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class Sticker {
-    var name: String
-
-    init(name: String) {
-        self.name = name
-    }
+struct Sticker {
+    var image: UIImage
 }
