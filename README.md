@@ -9,10 +9,10 @@ Clone the repository
 And run!
 
 ## Sticker Pack
-![Sticker Pack](sticker-pack.png)
+<img src="sticker-pack.png" width="300">
 
 ## Main App
-![Main App](main-app.png)
+<img src="main-app.png" width="300">
 
 ## About
 
