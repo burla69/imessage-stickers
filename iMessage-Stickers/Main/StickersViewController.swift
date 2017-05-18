@@ -17,6 +17,8 @@ final class StickersViewController: UIViewController {
         // Set up view
         automaticallyAdjustsScrollViewInsets = false
         view.backgroundColor = .white
+        
+        title = "iMessage Stickers"
 
         // Set collection view
         stickerCollectionView = StickerCollectionView(baseView: view)
