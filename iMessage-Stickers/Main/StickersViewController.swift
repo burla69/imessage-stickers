@@ -31,7 +31,7 @@ final class StickersViewController: UIViewController {
 
 extension StickersViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let content = Stickers[indexPath.section].stickers[indexPath.row].name
+        let content = Stickers[indexPath.section].stickers[indexPath.row].image
         let activityViewController = UIActivityViewController(activityItems: [content], applicationActivities: nil)
         if UI_USER_INTERFACE_IDIOM() == .pad {
             guard let sourceView = collectionView.cellForItem(at: indexPath) else { return }
