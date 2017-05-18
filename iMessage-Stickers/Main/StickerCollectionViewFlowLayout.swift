@@ -8,13 +8,13 @@
 
 import UIKit
 
-private let HeaderHeight: CGFloat = 50
-private let StickerHeight: CGFloat = 250
+private let headerHeight: CGFloat = 50
+private let stickerHeight: CGFloat = 250
 
 private struct NumberOfItemsPerRow {
-    static let Compact: CGFloat = 3
-    static let Medium: CGFloat = 4
-    static let Regular: CGFloat = 5
+    static let compact: CGFloat = 3
+    static let medium: CGFloat = 4
+    static let regular: CGFloat = 5
 }
 
 final class StickerCollectionViewFlowLayout: UICollectionViewFlowLayout {
@@ -42,19 +42,19 @@ final class StickerCollectionViewFlowLayout: UICollectionViewFlowLayout {
         switch sizeClass {
         case .compact:
             if UI_USER_INTERFACE_IDIOM() == .phone && deviceHorizontal {
-                setItemSize(for: NumberOfItemsPerRow.Medium)
+                setItemSize(for: NumberOfItemsPerRow.medium)
             } else {
-                setItemSize(for: NumberOfItemsPerRow.Compact)
+                setItemSize(for: NumberOfItemsPerRow.compact)
             }
         case .regular:
-            setItemSize(for: NumberOfItemsPerRow.Regular)
+            setItemSize(for: NumberOfItemsPerRow.regular)
         case .unspecified:
-            setItemSize(for: NumberOfItemsPerRow.Compact)
+            setItemSize(for: NumberOfItemsPerRow.compact)
         }
     }
 
     private func setItemSize(for numberOfItemsPerRow: CGFloat) {
-        headerReferenceSize = CGSize(width: baseWidth, height: HeaderHeight)
-        itemSize = CGSize(width: baseWidth / numberOfItemsPerRow, height: StickerHeight)
+        headerReferenceSize = CGSize(width: baseWidth, height: headerHeight)
+        itemSize = CGSize(width: baseWidth / numberOfItemsPerRow, height: stickerHeight)
     }
 }

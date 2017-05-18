@@ -11,7 +11,7 @@ import SnapKit
 
 final class StickerCollectionViewHeader: UICollectionReusableView {
 
-    static let ReuseIdentifier = String(describing: StickerCollectionViewHeader.self)
+    static let reuseIdentifier = String(describing: StickerCollectionViewHeader.self)
 
     private var nameLabel: UILabel = {
         let label = UILabel()
