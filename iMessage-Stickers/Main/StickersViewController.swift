@@ -23,6 +23,7 @@ final class StickersViewController: UIViewController {
         // Set collection view
         stickerCollectionView = StickerCollectionView(baseView: view)
         stickerCollectionView.delegate = self
+        stickerCollectionView.alwaysBounceVertical = true
         view.addSubview(stickerCollectionView)
         stickerCollectionView.snp.remakeConstraints { make in
             make.top.equalTo(self.topLayoutGuide.snp.bottom)
