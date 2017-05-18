@@ -13,18 +13,16 @@ final class StickerCell: UICollectionViewCell {
 
     static let ReuseIdentifier = String(describing: StickerCell.self)
 
-    private let nameLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.backgroundColor = .green
-        return label
+    private let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        return imageView
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-
-        contentView.addSubview(nameLabel)
-        nameLabel.snp.remakeConstraints { make in
+        contentView.addSubview(imageView)
+        imageView.snp.remakeConstraints { make in
             make.top.left.bottom.right.equalToSuperview()
         }
     }
@@ -34,6 +32,6 @@ final class StickerCell: UICollectionViewCell {
     }
 
     func configure(with sticker: Sticker) {
-        nameLabel.text = sticker.name
+        imageView.image = sticker.image
     }
 }
