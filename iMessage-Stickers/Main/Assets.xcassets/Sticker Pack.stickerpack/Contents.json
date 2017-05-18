@@ -1,0 +1,26 @@
+{
+  "stickers" : [
+    {
+      "filename" : "01.sticker"
+    },
+    {
+      "filename" : "02.sticker"
+    },
+    {
+      "filename" : "03.sticker"
+    },
+    {
+      "filename" : "04.sticker"
+    },
+    {
+      "filename" : "05.sticker"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "grid-size" : "small"
+  }
+}
