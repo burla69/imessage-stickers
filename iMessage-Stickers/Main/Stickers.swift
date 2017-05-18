@@ -8,11 +8,11 @@
 
 import Foundation
 
-let Stickers = [
-    StickerPack,
+let stickers = [
+    stickerPack,
 ]
 
-private let StickerPack =
+private let stickerPack =
     Section(name: "Sticker Pack",
         stickers: [
             Sticker(image: #imageLiteral(resourceName: "1")),
